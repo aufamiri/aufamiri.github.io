@@ -1,3 +1,52 @@
-baseURL = "http://example.org/"
+title = "Aufa Nabil"
+baseURL = "https://chillytaka.github.io/"
+theme = "hugo-resume"
 languageCode = "en-us"
-title = "My New Hugo Site"
+PygmentsCodeFences = true
+PygmentsCodeFencesGuessSyntax = true
+PygmentsStyle = "monokai"
+enableGitInfo = false
+
+[params]
+address = "Surabaya, East Java, Indonesia"
+email = "aufa.nabil.amiri@gmail.com"
+favicon = "/favicon.ico"
+firstName = "Aufa Nabil"
+lastName = "Amiri"
+phone = "(+62)8515-6466-241"
+profileImage = "img/TechChat.png"
+showEducation = true
+showOrganization = true
+showExperience = false 
+showOpenSource = false 
+showProjects = true
+showPublications = false 
+showQr = false 
+showSkills = true
+
+[params.google]
+
+[params.google.analytics]
+trackerID = "XX-123446-01"
+
+[[params.handles]]
+link = "https://linkedin.com/in/aufa-nabil-4129ab86"
+name = "LinkedIn"
+
+[[params.handles]]
+link = "https://github.com/chillytaka/"
+name = "GitHub"
+
+[[params.handles]]
+link = "https://gitlab.com/chillytaka/"
+name = "Gitlab"
+
+[[params.handles]]
+link = "https://twitter.com/AmiriAufa"
+name = "Twitter"
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[taxonomies]
+tag = "tags"
