@@ -17,12 +17,9 @@ phone = "(+62)8515-6466-241"
 profileImage = "img/TechChat.png"
 showEducation = true
 showOrganization = true
-showExperience = false 
-showOpenSource = false 
 showProjects = true
-showPublications = false 
-showQr = false 
 showSkills = true
+showBlog = true
 
 [params.google]
 
