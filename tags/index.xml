@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Aufa Nabil</title>
+    <link>https://chillytaka.github.io/tags/</link>
+    <description>Recent content in Tags on Aufa Nabil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Oct 2019 08:56:30 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laravel</title>
+      <link>https://chillytaka.github.io/tags/laravel/</link>
+      <pubDate>Sat, 26 Oct 2019 08:56:30 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://chillytaka.github.io/tags/website/</link>
+      <pubDate>Sat, 26 Oct 2019 08:56:30 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://chillytaka.github.io/tags/android/</link>
+      <pubDate>Fri, 25 Oct 2019 19:24:02 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apps</title>
+      <link>https://chillytaka.github.io/tags/apps/</link>
+      <pubDate>Fri, 25 Oct 2019 19:24:02 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/tags/apps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://chillytaka.github.io/tags/java/</link>
+      <pubDate>Fri, 25 Oct 2019 19:24:02 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

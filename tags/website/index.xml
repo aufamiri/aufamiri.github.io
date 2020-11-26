@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Aufa Nabil</title>
+    <link>https://chillytaka.github.io/tags/website/</link>
+    <description>Recent content in Website on Aufa Nabil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Oct 2019 08:56:30 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evolty 2020 Main Website</title>
+      <link>https://chillytaka.github.io/projects/evolty-2020-main-website/</link>
+      <pubDate>Sat, 26 Oct 2019 08:56:30 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/projects/evolty-2020-main-website/</guid>
+      <description>EVOLTY is an annual event from Electric Engineering Faculy. I work on their main website, along with some additional functionalities such as general administration system.</description>
+    </item>
+    
+    <item>
+      <title>Mage 5 Main Website</title>
+      <link>https://chillytaka.github.io/projects/mage/</link>
+      <pubDate>Wed, 01 May 2019 08:16:33 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/projects/mage/</guid>
+      <description>MAGE is an annual event from Computer Engineering degree at Sepuluh Nopember Institute of Technology. I work on their main website, along with some additional functionalities such as online test system and general administration system.</description>
+    </item>
+    
+  </channel>
+</rss>
