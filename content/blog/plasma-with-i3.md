@@ -2,7 +2,7 @@
 title: "Lazy Modder, Combining Plasma with I3"
 date: 2020-11-26T14:56:48+07:00
 publishdate: 2020-11-26T14:56:48+07:00
-summary: " By combining the ease of use of Plasma and the versatility of I3, we can create a wonderful Desktop Environment that require little setup while not losing the essence of I3. And the good looks come as a bonus ! " 
+summary: " Dengan menggabungkan kemudahan plasma dan ketangkasan dari I3, kita bisa membuat DE yang enak tanpa memerlukan setup yang sangat banyak tanpa perlu menghilangkan estetika dan kemudahan dari I3. Bonusnya ? tampilan desktop yang lain dari yang lain dan enak dilihat ! " 
 image: "/img/plasma+i3.png"
 tags: ["Linux", "UI", "Plasma", "I3"]
 drafts: true
@@ -10,44 +10,53 @@ drafts: true
 
 ![plasma-result.png](/img/plasma-result.png)
 
-Plasma is one of the most widely-used Dekstop Environment on Linux. It boast lots of customization while still keeping the user more productive. For a new user, Plasma might be their first choice of Dekstop Environment as it is closely resemble a Windows UI.
+Plasma adalah satu DE yang paling terkenal dan paling banyak dipakai di Linux. Salah satu aspek yang paling disukai oleh para penggunanya adalah kustomisasinya yang sangat banyak, tapi, masih membuat usernya lebih produktif. Untuk pengguna yang baru menyelami Linux, sepertinya DE Plasma ini menjadi salah satu DE yang paling sering dipilih karena kemiripannya dengan UI Windows pada umumnya.
 
-I3 is one of the most widely-used Tiling Window Manager. With its little footprint both in memory and storage, not to mention reduce usage of mouse handling, many people like the philosopy of the I3.
+I3 adalah sebuah WM yang paling sering digunakan oleh pengguna Linux yang sudah cukup advance. Ukurannya yang kecil baik dari sisi memory maupun storage, ditambah dengan semakin berkurangnya user untuk menggunakan mouse (terutama dalam hal pindah - pindah window) membuat banyak sekali orang suka dengan filosofi dasar dari I3 ini.
 
-Sometime, Plasma (while good looking and easy to use) required the user to use lots of mouse handling and as a typist, this might be not desirable because of carpal-tunnel and the like. I3 however, require lots of time to setup, not including some unknown things happening when our config didn't work properly.
+Dari tadi, saya pakai term aneh - aneh seperti DE dan WM, tapi, apakah 2 kata itu ? DE atau _Dekstop Environment_ adalah tampilan dari suatu desktop di Linux. Anggap saja seperti Launcher kalo di Android. DE sendiri ada banyak macemnya, mulai dari Plasma, Gnome, Budgie, Deepin dan banyak lagi. 
 
-By combining the ease of use of Plasma and the versatility of I3, we can create a wonderful Desktop Environment that require little setup while not losing the essence of I3. And the good looks come as a bonus !
+Sedangkan WM, atau _Window Manager_ basically adalah bagian dari suatu DE yang bertanggung jawab untuk mengatur behaviour dari window - window dari program. Biasanya, suatu DE sudah memiliki WM yang diinclude kan di dalamnya, sebagai contoh adalah Plasma dengan KWin nya. Namun, ada juga WM yang dapat berdiri sendiri, seperti I3, Awesome, BSPWM dan banyak lagi.
+
+Terkadang, Plasma (walaupun tampilannya sangat enak dilihat dan mudah dipake) masih memerlukan penggunanya untuk banyak pakai mouse dan sebagai seorang yang lumayan sering ngetik, sering - sering pegang mouse sepertinya bukan ide yang bagus karena bisa saja menimbulkan carpal-tunner dan sesuatu yang seperti itu. Di sisi lain, I3, setupnya makan banyak waktu, belum lagi kalo perlu debug gara - gara ada hal absurd yang terjadi yang disebabkan oleh config yang ga beres. 
+
+Solusinya ? Gabungkan saja dua DE dan WM yang paling banyak dipake ini dan jadilah, sebuah Desktop yang mudah dioperasikan dari Plasma, tapi masih terasa jejak - jejak ketangkasan dari I3. Tentu saja ditambah tampilan yang unik dan lebih enak dipandang dari desktop Plasma biasa.
 
 ### Prequisites
 
-- `plasma`, (obviously... '-')
-- `i3-gaps` or if you wanted to have a rounded corner, use `i3-gaps-rounded-git`
-- `picom`, a modern compositor, replacing `compton`
+- `plasma`, (kayaknya udah pasti deh... '-')
+- `i3-gaps` atau kalo mau pinggiran windownya rada rounded, bisa pakai `i3-gaps-rounded-git`
+- `picom`, kompositor yang lebih modern, penerus `compton`
 - `feh`, wallpaper changer
 
 ### Installations
-1. First install all of the above packages using pacman and yay. If you are using another distro (like Ubuntu for example) use your own package manager 
+1.  Install seluruh package yang dibutuhkan pakai pacman atau yay. Kalau pake distro Linux yang lain (misal, Ubuntu) silahkan disesuaikan.
+
    ```
     sudo pacman -Syy
     sudo pacman-S feh picom i3-gaps
     ```
-    or if you want to use the rounded version of i3-gaps, it is available in [AUR](https://aur.archlinux.org/packages/i3-gaps-rounded-git/), so use this command instead
+
+    atau, kalau ingin pakai yang versi rounded dari I3, kebetulan sudah ada yang bikin packagenya di [AUR](https://aur.archlinux.org/packages/i3-gaps-rounded-git/), silahkan pakai command ini apabila sudah terinstall yay sebelumnya. Atau kalau belum, bisa pakai AUR Helper lain atau ikuti [ini](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_and_upgrading_packages)
+
     ```
     sudo pacman -Syy
     yay -S i3-gaps-rounded-git
     ```
 
-2. run `i3-config-wizard`. This command will initialize the default i3 configuration.
+2. jalankan `i3-config-wizard`. Command ini akan otomatis membuat config default I3 yang nantinya akan dikustomisasi lebih lanjut.
 
-### Replace KWM with I3
-KWM is the default Window Manager on Plasma. There is a good documentation about changing KWM into another WM on the Plasma [site](https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma), but for the sake of keeping notes, I will included it here as well.
+### Replace KWIN with I3
+KWIN adalah WM yang sudah secara default dipakai di Plasma. Sebenarnya sudah ada dokumentasi yang lebih lengkap tentang bagaimana cara mengganti KWIN dengan WM yang lain di [site docs plasma](https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma), tapi ya demi catetan yang lengkap, saya copas-kan saja kesini.
 
-1. Create a new shell script named it `wm.sh`, copy-paste the following codes:
+1. Buat bash script baru dan kasih nama `wm.sh`, copas code dibawah:
     ```
     #!/bin/sh
     export KDEWM=/usr/bin/i3
     ```
-2. Open terminal, go to the directory of the created `wm.sh` and run `chmod +x wm.sh` to make the script executable
+    Inti dari kode diatas adalah mengganti variabel default KDEWM yang awalnya adalah KWIN atau `/usr/bin/kwin` menjadi path ke I3. Plasma nantinya tinggal melakukan eksekusi KDEWM seperti biasa.
+
+2. Buka terimnal, navigate ke direktori tempat script `wm.sh` tadi dibuat dan jalankan command `chmod +x wm.sh` supaya scriptnya bisa di execute.
 3. Go to **System Settings** -> **Startup and Shutdown** -> **AutoStart**
 4. Click the **Add Script** button
 5. Navigate to the script created earlier
