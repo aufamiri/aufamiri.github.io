@@ -137,15 +137,15 @@
     
 </ul>
  <p><img src="/img/msmtp.png" alt="plasma-result.png"></p>
-<h1 id="background-story">Background Story</h1>
+<h3 id="background-story">Background Story</h3>
 <p>Setelah proses instalasi icinga2 pada Raspberry Pi berhasil, saya perlu menemukan cara kalau server yang saya pantau sedang down. Icinga2 sendiri memiliki beberapa protokol yang bisa digunakan untuk mengirimkan notifikasi, menurut saya, yang paling enak adalah mengirimkan notifikasi melalui email sehingga notifikasi tersebut pasti akan langsung masuk ke HP saya. Selain itu, proses konfigurasi yang (seharusnya) relatif mudah juga menjadi salah satu faktor utama.</p>
-<h1 id="requirements">Requirements</h1>
+<h3 id="requirements">Requirements</h3>
 <ol>
 <li>Raspberry PI</li>
 <li>akun gmail</li>
 </ol>
-<h1 id="installation">Installation</h1>
-<h2 id="sebelum-mulai">Sebelum Mulai</h2>
+<h3 id="installation">Installation</h3>
+<h4 id="sebelum-mulai">Sebelum Mulai</h4>
 <p>Secara default, gmail akan memblokir akses ke akun email melalui port 587. Satu - satunya cara adalah dengan melakukan enable pada <strong>Less Secure App Access</strong> di bagian setting google.</p>
 <ol>
 <li>Masuk ke bagian pengaturan google</li>
@@ -153,7 +153,7 @@
 <li>Enable Less Secure App Access</li>
 </ol>
 <p><strong>Note</strong> : Apabila akun menggunakan 2FA, bisa menggunakan <strong>App Passwod</strong>. Petunjuk untuk melakukan itu bisa dilihat <a href="https://support.google.com/accounts/answer/185833">disini</a></p>
-<h2 id="install-smtp-client">Install SMTP client</h2>
+<h4 id="install-smtp-client">Install SMTP client</h4>
 <p>Kita perlu menginstall sebuah client untuk membantu kita dalam membuat request kepada smtp milik gmail, ada banyak sekali smtp client yang terkenal dan sering dipakai, seperti misalnya <strong>ssmtp</strong>, <strong>msmtp</strong> dan <strong>OpenSMTPD</strong>. Disini saya akan menggunakan <strong>msmtp</strong> karena walaupun ssmtp lebih terkenal dan lebih sering dipakai, per bulan <strong>Maret 2019</strong> status ssmtp berubah menjadi unmantained.</p>
 <p>silahkan lakukan command berikut :</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apt update
