@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Aufa Nabil | Linux</title>
-  <meta property="og:title" content="Aufa Nabil | Linux" />
+  <title>Aufa Nabil | Install Smtp Client</title>
+  <meta property="og:title" content="Aufa Nabil | Install Smtp Client" />
   <meta property="og:image" content="https://chillytaka.github.io/img/foto.jpg" />
   <meta name="description" content="">
   <meta property="og:description" content="" />
@@ -97,23 +97,104 @@
   </div>
 </nav>
   <div class="container-fluid p-0">
+     <nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
     
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://chillytaka.github.io/">Home</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://chillytaka.github.io/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://chillytaka.github.io/blog/install-smtp-client/">Install Smtp Client</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
 
 <section class="resume-section p-3 p-lg-5 d-flex d-column">
   <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">Install Smtp Client</span></h2>
+    <span class="text-primary">February 9, 2021</span>
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/linux">Linux</a></li>
+    
+      <li><a class="tag" href="/tags/server">Server</a></li>
+    
+</ul>
+ <p><img src="/img/msmtp.png" alt="plasma-result.png"></p>
+<h1 id="background-story">Background Story</h1>
+<p>Setelah proses instalasi icinga2 pada Raspberry Pi berhasil, saya perlu menemukan cara kalau server yang saya pantau sedang down. Icinga2 sendiri memiliki beberapa protokol yang bisa digunakan untuk mengirimkan notifikasi, menurut saya, yang paling enak adalah mengirimkan notifikasi melalui email sehingga notifikasi tersebut pasti akan langsung masuk ke HP saya. Selain itu, proses konfigurasi yang (seharusnya) relatif mudah juga menjadi salah satu faktor utama.</p>
+<h1 id="requirements">Requirements</h1>
+<ol>
+<li>Raspberry PI</li>
+<li>akun gmail</li>
+</ol>
+<h1 id="installation">Installation</h1>
+<h2 id="sebelum-mulai">Sebelum Mulai</h2>
+<p>Secara default, gmail akan memblokir akses ke akun email melalui port 587. Satu - satunya cara adalah dengan melakukan enable pada <strong>Less Secure App Access</strong> di bagian setting google.</p>
+<ol>
+<li>Masuk ke bagian pengaturan google</li>
+<li>Pilih tab <strong>Security</strong></li>
+<li>Enable Less Secure App Access</li>
+</ol>
+<p><strong>Note</strong> : Apabila akun menggunakan 2FA, bisa menggunakan <strong>App Passwod</strong>. Petunjuk untuk melakukan itu bisa dilihat <a href="https://support.google.com/accounts/answer/185833">disini</a></p>
+<h2 id="install-smtp-client">Install SMTP client</h2>
+<p>Kita perlu menginstall sebuah client untuk membantu kita dalam membuat request kepada smtp milik gmail, ada banyak sekali smtp client yang terkenal dan sering dipakai, seperti misalnya <strong>ssmtp</strong>, <strong>msmtp</strong> dan <strong>OpenSMTPD</strong>. Disini saya akan menggunakan <strong>msmtp</strong> karena walaupun ssmtp lebih terkenal dan lebih sering dipakai, per bulan <strong>Maret 2019</strong> status ssmtp berubah menjadi unmantained.</p>
+<p>silahkan lakukan command berikut :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apt update
+sudo apt install msmtp msmtp-mta
+</code></pre></div><p>Kemudian masuk ke direktori <code>$HOME</code> dan bikin file baru dengan nama <code>.msmtprc</code></p>
+<p>Silahkan copy paste isi file <code>.msmtprc</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">
+# Set default values for all following accounts.
+defaults
+auth           on
+tls            on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+logfile        ~/.msmtp.log
 
-  Content tagged with  <span class="tag">Linux</span>
-    <ul>
-      
-          <li>
-             <a href="https://chillytaka.github.io/blog/install-smtp-client/">Install Smtp Client</a>
-         </li>
-      
-          <li>
-             <a href="https://chillytaka.github.io/blog/plasma-with-i3/">Lazy Modder, Combining Plasma with I3</a>
-         </li>
-      
-    </ul>
+# Gmail
+account        gmail
+host           smtp.gmail.com
+port           587
+from           USERNAME_GMAIL@gmail.com
+user           USERNAME_GMAIL 
+password       PASSWORD_GMAIL
+
+# Set a default account
+account default : gmail 
+
+</code></pre></div><p><strong>penjelasan</strong>
+auth : lakukan autentikasi pada server smtp yang dituju
+tls : gunakan protokol tls
+tls_trust_file : ca-certificates untuk sertificate tls nya
+logfile : lokasi tempat msmtp menyimpan log file nya.</p>
+<p>account : nama akun
+host : server smtp yang ingin dihubungkan
+port : port smtp server (biasanya 465 atau 587)
+from : sender email
+user : username akun email
+password : password akun email</p>
+<p>account default : opsi ini berguna apabila terdapat beberapa email dalam satu konfigurasi, sebagai akun default tempat email dikirimkan</p>
+<p>untuk mengetest apakah konfigurasi sudah benar atau tidak, lakukan command berikut :
+<code>echo &quot;HALO&quot; | mail -s &quot;test&quot; email.tujuan@gmail.com</code>
+apabila email sudah diterima di email tujuan, selamat, berarti konfigurasi sudah benar !</p>
+ 
   </div>
 </section>
 

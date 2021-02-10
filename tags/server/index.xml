@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server on Aufa Nabil</title>
+    <link>https://chillytaka.github.io/tags/server/</link>
+    <description>Recent content in Server on Aufa Nabil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Feb 2021 16:46:08 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Smtp Client</title>
+      <link>https://chillytaka.github.io/blog/install-smtp-client/</link>
+      <pubDate>Tue, 09 Feb 2021 16:46:08 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/blog/install-smtp-client/</guid>
+      <description>Cara melakukan instalasi SMTP Client, merupakan serangkaian tools yang &lt;strong&gt;niatnya&lt;/strong&gt; saya pakai untuk melakukan server monitoring&amp;hellip;.. sebelum akhirnya projectnya mangkrak dan milih pake uptimerobot :v</description>
+    </item>
+    
+  </channel>
+</rss>

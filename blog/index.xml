@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Aufa Nabil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2020 14:56:48 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Feb 2021 16:46:08 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Smtp Client</title>
+      <link>https://chillytaka.github.io/blog/install-smtp-client/</link>
+      <pubDate>Tue, 09 Feb 2021 16:46:08 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/blog/install-smtp-client/</guid>
+      <description>Cara melakukan instalasi SMTP Client, merupakan serangkaian tools yang &lt;strong&gt;niatnya&lt;/strong&gt; saya pakai untuk melakukan server monitoring&amp;hellip;.. sebelum akhirnya projectnya mangkrak dan milih pake uptimerobot :v</description>
+    </item>
+    
     <item>
       <title>Lazy Modder, Combining Plasma with I3</title>
       <link>https://chillytaka.github.io/blog/plasma-with-i3/</link>
