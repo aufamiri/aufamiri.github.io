@@ -5,7 +5,6 @@ publishdate: 2021-02-09T16:46:08+07:00
 summary: " Cara melakukan instalasi SMTP Client, merupakan serangkaian tools yang **niatnya** saya pakai untuk melakukan server monitoring..... sebelum akhirnya projectnya mangkrak dan milih pake uptimerobot :v " 
 image: "/img/msmtp.png"
 tags: ["Linux", "Server"]
-draft: true
 ---
 
 ![plasma-result.png](/img/msmtp.png)
