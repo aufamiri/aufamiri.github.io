@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Feb 2018 18:56:13 -0500</lastBuildDate><atom:link href="https://chillytaka.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Lazy Modder, Combining Plasma with I3</title>
+      <link>https://chillytaka.github.io/blog/plasma-with-i3/</link>
+      <pubDate>Thu, 26 Nov 2020 14:56:48 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/blog/plasma-with-i3/</guid>
+      <description>Dengan menggabungkan kemudahan plasma dan ketangkasan dari I3, kita bisa membuat DE yang enak tanpa memerlukan setup yang sangat banyak tanpa perlu menghilangkan estetika dan kemudahan dari I3. Bonusnya ? tampilan desktop yang lain dari yang lain dan enak dilihat !</description>
+    </item>
+    
+    <item>
       <title>Evolty 2020 Main Website</title>
       <link>https://chillytaka.github.io/projects/evolty-2020-main-website/</link>
       <pubDate>Sat, 26 Oct 2019 08:56:30 +0700</pubDate>

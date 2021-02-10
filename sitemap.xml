@@ -9,6 +9,42 @@
   </url>
   
   <url>
+    <loc>https://chillytaka.github.io/blog/</loc>
+    <lastmod>2020-11-26T14:56:48+07:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://chillytaka.github.io/tags/i3/</loc>
+    <lastmod>2020-11-26T14:56:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chillytaka.github.io/blog/plasma-with-i3/</loc>
+    <lastmod>2020-11-26T14:56:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chillytaka.github.io/tags/linux/</loc>
+    <lastmod>2020-11-26T14:56:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chillytaka.github.io/tags/plasma/</loc>
+    <lastmod>2020-11-26T14:56:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chillytaka.github.io/tags/</loc>
+    <lastmod>2020-11-26T14:56:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chillytaka.github.io/tags/ui/</loc>
+    <lastmod>2020-11-26T14:56:48+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chillytaka.github.io/projects/evolty-2020-main-website/</loc>
     <lastmod>2019-10-26T08:56:30+07:00</lastmod>
   </url>
@@ -22,11 +58,6 @@
     <loc>https://chillytaka.github.io/projects/</loc>
     <lastmod>2019-10-26T08:56:30+07:00</lastmod>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://chillytaka.github.io/tags/</loc>
-    <lastmod>2019-10-26T08:56:30+07:00</lastmod>
   </url>
   
   <url>
