@@ -8,6 +8,8 @@ tags: ["Linux", "Server"]
 draft: true
 ---
 
+![plasma-result.png](/img/msmtp.png)
+
 # Background Story
 
 Setelah proses instalasi icinga2 pada Raspberry Pi berhasil, saya perlu menemukan cara kalau server yang saya pantau sedang down. Icinga2 sendiri memiliki beberapa protokol yang bisa digunakan untuk mengirimkan notifikasi, menurut saya, yang paling enak adalah mengirimkan notifikasi melalui email sehingga notifikasi tersebut pasti akan langsung masuk ke HP saya. Selain itu, proses konfigurasi yang (seharusnya) relatif mudah juga menjadi salah satu faktor utama.
