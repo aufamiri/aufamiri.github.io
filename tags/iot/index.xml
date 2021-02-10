@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT on Aufa Nabil</title>
+    <link>https://chillytaka.github.io/tags/iot/</link>
+    <description>Recent content in IoT on Aufa Nabil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Mar 2020 10:05:09 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart Chair</title>
+      <link>https://chillytaka.github.io/projects/smart-chair/</link>
+      <pubDate>Tue, 10 Mar 2020 10:05:09 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/projects/smart-chair/</guid>
+      <description>A group project as one of the requirement to pass Telematics Project course. The SmartChair project is a chair with the ability to remind you if you have sitting for too long and it has a treatment mode to treat hemorrhoid by heating the sitting area.</description>
+    </item>
+    
+  </channel>
+</rss>

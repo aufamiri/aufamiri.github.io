@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flutter on Aufa Nabil</title>
+    <link>https://chillytaka.github.io/tags/flutter/</link>
+    <description>Recent content in Flutter on Aufa Nabil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Dec 2020 10:09:08 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efisiensi</title>
+      <link>https://chillytaka.github.io/projects/efisiensi/</link>
+      <pubDate>Thu, 10 Dec 2020 10:09:08 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/projects/efisiensi/</guid>
+      <description>Efisiensi is an app for booking bus tickets accross Indonesia. It has many feature such as multiple tickets booking, self-select seats, see purchase history, easy boarding by only showing the app, and many more !.</description>
+    </item>
+    
+  </channel>
+</rss>

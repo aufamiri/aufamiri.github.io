@@ -6,7 +6,25 @@
     <description>Recent content in Apps on Aufa Nabil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2019 19:24:02 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/tags/apps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 10:09:08 +0700</lastBuildDate><atom:link href="https://chillytaka.github.io/tags/apps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efisiensi</title>
+      <link>https://chillytaka.github.io/projects/efisiensi/</link>
+      <pubDate>Thu, 10 Dec 2020 10:09:08 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/projects/efisiensi/</guid>
+      <description>Efisiensi is an app for booking bus tickets accross Indonesia. It has many feature such as multiple tickets booking, self-select seats, see purchase history, easy boarding by only showing the app, and many more !.</description>
+    </item>
+    
+    <item>
+      <title>Smart Chair</title>
+      <link>https://chillytaka.github.io/projects/smart-chair/</link>
+      <pubDate>Tue, 10 Mar 2020 10:05:09 +0700</pubDate>
+      
+      <guid>https://chillytaka.github.io/projects/smart-chair/</guid>
+      <description>A group project as one of the requirement to pass Telematics Project course. The SmartChair project is a chair with the ability to remind you if you have sitting for too long and it has a treatment mode to treat hemorrhoid by heating the sitting area.</description>
+    </item>
+    
     <item>
       <title>Foculance</title>
       <link>https://chillytaka.github.io/projects/foculance/</link>
