@@ -9,17 +9,17 @@ tags: ["Linux", "Server"]
 
 ![plasma-result.png](/img/msmtp.png)
 
-# Background Story
+### Background Story
 
 Setelah proses instalasi icinga2 pada Raspberry Pi berhasil, saya perlu menemukan cara kalau server yang saya pantau sedang down. Icinga2 sendiri memiliki beberapa protokol yang bisa digunakan untuk mengirimkan notifikasi, menurut saya, yang paling enak adalah mengirimkan notifikasi melalui email sehingga notifikasi tersebut pasti akan langsung masuk ke HP saya. Selain itu, proses konfigurasi yang (seharusnya) relatif mudah juga menjadi salah satu faktor utama.
 
-# Requirements
+### Requirements
 1. Raspberry PI
 2. akun gmail
 
-# Installation
+### Installation
 
-## Sebelum Mulai
+#### Sebelum Mulai
 
 Secara default, gmail akan memblokir akses ke akun email melalui port 587. Satu - satunya cara adalah dengan melakukan enable pada **Less Secure App Access** di bagian setting google.
 
@@ -29,7 +29,7 @@ Secara default, gmail akan memblokir akses ke akun email melalui port 587. Satu 
 
 **Note** : Apabila akun menggunakan 2FA, bisa menggunakan **App Passwod**. Petunjuk untuk melakukan itu bisa dilihat [disini](https://support.google.com/accounts/answer/185833)
 
-## Install SMTP client
+#### Install SMTP client
 Kita perlu menginstall sebuah client untuk membantu kita dalam membuat request kepada smtp milik gmail, ada banyak sekali smtp client yang terkenal dan sering dipakai, seperti misalnya **ssmtp**, **msmtp** dan **OpenSMTPD**. Disini saya akan menggunakan **msmtp** karena walaupun ssmtp lebih terkenal dan lebih sering dipakai, per bulan **Maret 2019** status ssmtp berubah menjadi unmantained.
 
 silahkan lakukan command berikut :
